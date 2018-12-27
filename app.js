@@ -1,27 +1,3 @@
-function toWeirdCase(string){
-	var wordsArray = string.split(" ");
-	var weirdArray = [];
-//	console.log(wordsArray);
-//	var firstWord = wordsArray[0];
-	for(var j = 0; j < wordsArray.length; j++){
-		var result = "";
-		for(var i = 0; i < wordsArray[j].length; i++){
-			if(i % 2 == 0){
-				result = result.concat(wordsArray[j][i].toUpperCase());
-			}
-			else{
-				result = result.concat(wordsArray[j][i].toLowerCase())
-			}
-		}
-		weirdArray.push(result);
-		console.log(result);
-	}
-	var weirdString = weirdArray.toString();
-	weirdString = weirdString.replace(/,/g, ' ');
-	return weirdString;
-}
-
-
 function disemvowel(str) {
 
 	var vowelArray = ['A','E','I','O','U','a','e','i','o','u'];
